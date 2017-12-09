@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style>
+body  {
+    background-image: url("https://scontent.fhan2-1.fna.fbcdn.net/v/t34.0-12/24989590_1883637251858779_216801853_n.jpg?oh=13dc75018ef4a9f87b3ccba57fa2f4a4&oe=5A2E21C8");
+    background-color: #cccccc;
+	background-size:cover
+}
+</style>
+</head>
+<body>
+
+ 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.facebook.com/profile.php?id=100004663422919">Lớp 10 Thiểu năng</a>
+  <a href="https://www.facebook.com/profile.php?id=100004663422919">Lớp 10 Taboo</a>
+  <a href="https://www.facebook.com/profile.php?id=100004663422919">Nhân sự</a>
+  
+</div>
+
+<div id="main">
+  <span style="color: white;font-size: 150px;font-family: Roboto">Trả tác phẩm K49<BR></span>
+  <span style="color: white;font-size: 65px;font-family: Roboto">Vui lòng nhấn vào nút bên dưới để xem thông tin mỗi lớp<BR></span>
+  <span style="color: white;font-size: 45px;cursor:pointer;font-family: Roboto" onclick="openNav()">&#9776; Danh sách lớp</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+</body>
+</html> 
