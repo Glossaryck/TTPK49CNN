@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-a:link, a:visited {
-    background-color: white;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a:hover, a:active {
-    background-color: green;
-    color: white;
-}
-body  {
-    background-image: url("https://i.imgur.com/MPlBRZq.jpg");
-    background-color: #cccccc;
-	background-size:cover
-}
-</style>
+<link rel="stylesheet" type="text/css" href="credit.css">
 </head>
 <body>
-
  <div id="main">
-  <span style="color: orange;font-size: 100px;font-family: Roboto">CREDIT:<BR></span>
-  <a href="https://www.facebook.com/profile.php?id=100004663422919" target="_blank">Lớp 10 Taboo</a>
-  <a href="https://www.facebook.com/profile.php?id=100006375673630" target="_blank">Lớp 10 Thiểu Năng</a>
-  <a href="https://github.com/LegChan/TTPK49CNN" target="_blank">Mã nguồn trên GitHub</a>
+  <span style="color: orange;font-size: 100px;font-family: Roboto">NHÂN SỰ<BR></span>
+ <button onclick="myFunction3()" class="dropbtn3">Lớp 10I</button>
+  <div id="myDropdown3" class="dropdown-content3">
+    <a href="#">Ban tiểu luận I49</a>
+    <a href="#">Ban đạo cụ I49</a>
+	<a href="#">Ban hậu cần I49</a>
+	<a href="#">Ban media I49</a>
+	<a href="#">Ban phim ảnh I49</a>
+	</div>
+ <button onclick="myFunction()" class="dropbtn">Lớp 10S</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Ban tiểu luận S49</a>
+    <a href="#">Ban đạo cụ S49</a>
+	<a href="#">Ban hậu cần S49</a>
+	<a href="#">Ban media S49</a>
+	<a href="#">Ban phim ảnh S49</a>
+	</div>
+<button onclick="myFunction2()" class="dropbtn2">Khác</button>
+  <div id="myDropdown2" class="dropdown-content2">
+    <a href="https://www.facebook.com/profile.php?id=100004663422919">Coder 01</a>
+    <a href="https://www.facebook.com/profile.php?id=100006375673630">Coder 02</a>
 </div>
+ <a href="https://github.com/LegChan/TTPK49CNN" target="_blank">Mã nguồn trên GitHub</a>
+</div>
+<embed name="MiracleWave" src="MIRACLE_WAVE.oga" loop="false" hidden="true" autostart="true">
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var a;
+    for (a = 0; i < dropdowns.length; a++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
+
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show3");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn3')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var f;
+    for (f = 0; i < dropdowns.length; f++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show3')) {
+        openDropdown.classList.remove('show3');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
