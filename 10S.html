@@ -6,6 +6,7 @@
 </style>
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Quay lại mục lục</button>
 <span style="color: orange;font-size: 150px;font-family: Roboto">Lớp 10S<BR></span>
 <span style="color: orange;font-size: 100px;font-family: Roboto">Mục lục<BR></span>
 <div>
@@ -115,6 +116,20 @@ window.onclick = function(event) {
       }
     }
   }
+}
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 </script>
 </html> 
