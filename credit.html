@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nhân sự</title>
 <link rel="stylesheet" type="text/css" href="credit.css">
 </head>
 <body>
-<span style="color: orange;font-size: 100px;font-family: Roboto">NHÂN SỰ<BR></span>
+ <div id="main">
+  <span style="color: orange;font-size: 100px;font-family: Roboto">NHÂN SỰ<BR></span>
  <button onclick="myFunction3()" class="dropbtn3">Lớp 10I</button>
   <div id="myDropdown3" class="dropdown-content3">
     <a href="#">Ban tiểu luận I49</a>
@@ -27,14 +27,15 @@
     <a href="https://www.facebook.com/profile.php?id=100004663422919">Coder 01</a>
     <a href="https://www.facebook.com/profile.php?id=100006375673630">Coder 02</a>
 </div>
- <span style="color: black;font-family: Roboto"><a href="https://github.com/LegChan/TTPK49CNN" target="_blank">Mã nguồn trên GitHub</a>
+ <a href="https://github.com/LegChan/TTPK49CNN" target="_blank">Mã nguồn trên GitHub</a>
 <a href="https://m.me/1927941757479757/">Message Us</a>
 </div>
-<embed name="BGM" src="MIRACLE_WAVE.oga" loop="false" hidden="true" autostart="true">
+<embed name="MiracleWave" src="MIRACLE_WAVE.oga" loop="false" hidden="true" autostart="true">
 <script>
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -48,9 +49,11 @@ window.onclick = function(event) {
     }
   }
 }
+
 function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show2");
 }
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn2')) {
 
@@ -64,6 +67,7 @@ window.onclick = function(event) {
     }
   }
 }
+
 function myFunction3() {
     document.getElementById("myDropdown3").classList.toggle("show3");
 }
@@ -80,6 +84,7 @@ window.onclick = function(event) {
       }
     }
   }
+}
 </script>
 </body>
 </html>
