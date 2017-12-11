@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="10I.css">
+</style>
+<title>Nhóm 2 I49</title>
+</head>
+<body>
+<span style="color: orange;font-size: 150px;font-family: Roboto">Lớp 10I<BR></span>
+<span style="color: orange;font-size: 100px;font-family: Roboto">Mục lục<BR></span>
+<div>
+<span style="font-family: Roboto"><a href="stuff.html#poster">Poster</a>
+<span style="font-family: Roboto"><a href="stuff.html#trailer">Trailer</a>
+<span style="font-family: Roboto"><a href="stuff.html#content">Nội dung chính</a>
+<span style="font-family: Roboto"><a href="https://drive.google.com/open?id=1r-0n4GGIkCqvjfzCH4HbstUkI6znkg3l" target="_blank">Kịch bản</a>
+<button onclick="myFunction()" class="dropbtn">Nhân sự</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="stuff.html">Ban tiểu luận I49</a>
+    <a name="bantieuluan">Ban tiểu luận I49</a>
+    <a name="bandaocu">Ban đạo cụ I49</a>
+	<a name="banhaucan">Ban hậu cần I49</a>
+	<a name="banmedia">Ban media I49</a>
+	<a name="banphimanh">Ban phim ảnh I49</a>
+	</div>
+</body>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<embed name="BGM" src="gucci_gang.mp3" loop="true" hidden="true" autostart="true">
+</html> 
