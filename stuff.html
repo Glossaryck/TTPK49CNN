@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="10I.css">
+<link rel="stylesheet" type="text/css" href="stuff.css">
 </style>
 <title>Nhóm 2 I49</title>
 </head>
@@ -32,7 +32,21 @@ NỘI DUNG CHÍNH Ở ĐÂY
 <pre>
 5.Ban phim ảnh:
 </pre>
+<button onclick="ggez()" id="myBtn" title="Back to menu">Quay lại mục lục</button>
 </body>
 </span>
 <embed name="BGM" src="gucci_gang.mp3" loop="true" hidden="true" autostart="true">
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "block";
+    }
+}
+function ggez(argument) {
+  window.location.href = "10I.html";
+}
+</script>
 </html>
