@@ -80,3 +80,24 @@ body  {
   padding: 15px;
   border-radius: 10px;
 }
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: portrait)	  
+	  {
+	body {
+   background-size : cover ;
+}
+    .name, .name2, .description{
+        font-size : 45px;
+    }
+}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: landscape)	  
+	  {
+    .name, .name2, .description{
+        font-size : 45px;
+    }
+}

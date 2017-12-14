@@ -2,8 +2,24 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+	background-image: url(background.jpg);
+    background-color: #cccccc;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
+  .name {
+       color: orange;font-size: 45px;cursor:pointer;font-family: Roboto;
+    }
+	
+  .name2 {
+	  color: orange;font-size: 150px;font-family: Roboto;
+  }	
 
+  .description {
+    color: orange;font-size: 65px;font-family: Roboto
+  }
+  
 .sidenav {
     height: 100%;
     width: 0;
@@ -47,4 +63,25 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: portrait)	  
+	  {
+	body {
+   background-size : cover ;
+}
+    .name, .name2, .description{
+        font-size : 45px;
+    }
+}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: landscape)	  
+	  {
+    .name, .name2, .description{
+        font-size : 45px;
+    }
 }

@@ -20,6 +20,14 @@ body  {
     background-attachment: fixed;
 }
 
+.name {
+	 color: orange;font-size: 150px;font-family: Roboto;
+}
+
+.name2{
+	 color: orange;font-size: 100px;font-family: Roboto;
+}
+
 .dropbtn {
     background-color: White;
     color: black;
@@ -84,4 +92,41 @@ body  {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: portrait)	  
+	  {
+	body {
+   background-size : cover ;
+}
+
+#myBtn {
+  float : left;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+    .name, .name2, .description{
+        font-size : 75px;
+    }
+}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: landscape)	  
+	  {
+    .name, .name2, .description{
+        font-size : 45px;
+    }
 }

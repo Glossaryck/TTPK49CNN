@@ -20,6 +20,14 @@ body  {
     background-attachment: fixed;
 }
 
+.name {
+	 color: orange;font-size: 150px;font-family: Roboto;
+}
+
+.name2{
+	 color: orange;font-size: 100px;font-family: Roboto;
+}
+
 .dropbtn {
     background-color: White;
     color: black;
@@ -66,3 +74,24 @@ body  {
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: portrait)	  
+	  {
+	body {
+   background-size : cover ;
+}
+    .name, .name2, .description{
+        font-size : 75px;
+    }
+}
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: landscape)	  
+	  {
+    .name, .name2, .description{
+        font-size : 45px;
+    }
+}

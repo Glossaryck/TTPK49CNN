@@ -16,7 +16,9 @@ a:hover, a:active {
 body  {
     background-image: url("background.jpg");
     background-color: #cccccc;
-	background-size:cover
+	background-size: 100%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
 
 .dropbtn {
@@ -159,3 +161,16 @@ body  {
 .dropdown3 a:hover {background-color: #f1f1f1}
 
 .show3 {display:block;}
+
+
+@media only screen 
+      and (max-width: 768px)
+      and (orientation: portrait)	  
+	  {
+	body {
+   background-size : cover ;
+}
+    .name, .name2, .description{
+        font-size : 45px;
+    }
+}
